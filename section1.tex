@@ -1,0 +1,106 @@
+
+
+\section{Kombinatorika} 
+    \subsection{Pravidlo součinu} 
+    \begin{itemize}
+        \item Př. 15 chlapců, 13 dívek, kolik je možných tanečních párů?
+        \item $15\cdot 13=195$
+    \end{itemize}
+    \subsection{Pravidlo součtu}
+    \begin{itemize}
+        \item Př. kolik je trojciferných čísel dělitelných pěti, obsahující 
+        max jednu číslici 5
+        \item $9+8+8\cdot 9 = 161$
+    \end{itemize}
+    \subsection{Permutace}
+        \begin{itemize}
+            \item Seřazení n prvků
+            \item Př. abc, acb, bca, bac, cab, cba  $3\cdot 2\cdot 1=6$
+        \end{itemize}
+    \subsection{Variace}
+        \begin{itemize}
+            \item Uspořádaný výběr
+            \item Př. abcd chci 2, je jich 12
+            \item $\frac{n!}{(n-k)!}$
+        \end{itemize}
+    \subsection{Kombinace}
+        \begin{itemize}
+            \item Neuspořádaný výběr
+            \item Př. mám 5 koček, chci 3 na dovolenou, 10 možností
+            \item zápis ${5\choose 3}=\frac{n!}{k!(n-k)!}$
+        \end{itemize}
+    \subsection{Pascalův trojúhelník}
+        \begin{tabular}{cccccccccccc}
+            & & & & & &1& & & & & \\
+            & & & & &1& &1& & & & \\
+            & & & &1& &2& &1& & & \\
+            & & &1& &3& &3& &1& & \\
+            & &1& &4& &6& &4& &1& \\
+            &1& &5& &10& &10& &5& &1
+        \end{tabular}
+    \subsection{Neuspořádaný výběr s opakováním}
+        \begin{itemize}
+            \item ${{n+k-1}\choose k}$
+        \end{itemize}
+    \subsection{Spárování}
+        \begin{itemize}
+            \item Př. a,b,c,d,e,f - $\frac{{6 \choose 2}{4 \choose 2}{2 \choose 2}}{3!}$
+        \end{itemize}
+\section{Klasická pravděpodobnost}
+    \begin{enumerate}
+        \item $\Omega$ množina všech výsledků stejně možných
+        \item Laplaceova definice
+            \begin{itemize}
+                \item $P(a)=\frac{|A|}{|\Omega|} = \frac{\mbox{Počet příznivých}}{\mbox{Počet všech možných}}$
+            \end{itemize}
+        \item Komplementární (doplňkový) jev
+            \begin{itemize}
+                \item $A^c=\Omega \backslash A$
+                \item $P(A^c)=1-P(A)$
+            \end{itemize}
+    \end{enumerate}
+\section{Geometrická pravděpodobnost} 
+\section{Kolmogorova pravděpodobnost}
+\section{Bayesova věta}
+    \begin{enumerate}
+        \item Podmíněná pravděpodobnost
+            \begin{itemize}
+                \item $P(A|B)=\frac{P(A\cap B)}{P(B)}$
+            \end{itemize}
+        \item Věta o úplné pravděpodobnosti
+            \begin{itemize}
+                \item $P(A)=\sum P(A|B_i)P(B_i)$
+            \end{itemize}
+        \item Bayesova věta
+            \begin{itemize}
+                \item $P(B|A)=\frac{P(A|B)P(B)}{P(A)}$
+            \end{itemize}
+    \end{enumerate}
+
+\section{Náhodná veličina}
+    \subsection{Střední hodnota}
+        \begin{itemize}
+            \item $\mathbb{E}X = \sum_{i=1}^\infty x_i \cdot P(X=x_i)$
+            \item $\mathbb{E}X = \int^\infty_{-\infty} xf(x)dx$
+        \end{itemize}
+    \subsection{Moment}
+        Je bad\\
+        $\mathbb{E}|X-\mathbb{E}|$
+    \subsection{Rozptyl}
+        $\var X = \mathbb{E}(X-\mathbb{E})^2$
+    \subsection{Kovariance}
+        $\cov(X,Y)=\mathbb{E}(X-\mathbb{E}X)(Y-\mathbb{E}Y)$
+        $\cov(X,X)=\var(X)$
+    \subsection{Čebyševova nerovnost}
+    
+\newpage
+
+Př:
+Kolikrát musíme hodit kostkou, aby pst, že odchylka podílu sudých čísel od $\frac{1}{2}$
+byla maximálně 0,05 s pravděpodobností alespoň 0,95?\\
+$X$ \dots podíl sudých čísel v n hodech kostkou\\
+$X_i$ \dots podíl sudých čísel v i-tém hodu, neboli\\
+$X_i = 1$, pokud v i-tém hodu padne sudé číslo\\
+$X_i = 0$, pokud v i-tém hodu padne liché číslo
+
+        
